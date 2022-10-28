@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+        var x = prompt("Введите х");
+        if(navigator.userAgent.indexOf("YaBrowser") != -1){
+            alert("y = " + (4*x));
+        }
+        if(navigator.userAgent.indexOf("Edg") != -1){
+            alert("y = " + (10*x**2));
+        }
+        if(navigator.userAgent.indexOf("OPR") != -1){
+            alert("y = " + (x**2 - 9));
+        }
+        if(navigator.userAgent.indexOf("Firefox") != -1){
+            alert("y = " + ( -3*x + 9));
+        }
+        if(!/OPR/.test(navigator.appVersion) && !/Edg/.test(navigator.appVersion) && !/YaBrowser/.test(navigator.appVersion) && /Chrome/.test(navigator.appVersion))
+        {
+            alert("y = " + (4*x - 1));
+        }
+    </script>
+<body>
+	 
+</body>
+</html>
